@@ -19,6 +19,10 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v3
 
+      # Install Visual Studio Build Tools
+      - name: Install Visual Studio Build Tools
+        uses: microsoft/setup-msbuild@v2
+
       # Setup NuGet
       - name: Setup NuGet
         uses: NuGet/setup-nuget@v1
