@@ -4,9 +4,7 @@
 name: "[E-STALE] ASP.NET Build and Veracode Scan"
 
 on:
-  push:
-    branches:
-      - main
+  workflow_dispatch:
 
 jobs:
   build:
