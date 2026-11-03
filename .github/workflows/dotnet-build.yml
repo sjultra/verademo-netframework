@@ -1,10 +1,9 @@
-# Builds the ASP.NET app and scans it with Veracode.
-# Runs on push to main.
-
-name: "[E-STALE] ASP.NET Build and Veracode Scan"
+name: ASP.NET Build and Veracode Scan
 
 on:
-  workflow_dispatch:
+  push:
+    branches:
+      - main
 
 jobs:
   build:
